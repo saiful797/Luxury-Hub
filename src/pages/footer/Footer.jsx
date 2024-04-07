@@ -5,7 +5,7 @@ const Footer = () => {
             <div className="footer max-w-6xl grid  place-content-center md:place-content-between	">
                 <aside>
                    <img className="w-20 rounded-3xl mx-auto" src="https://i.ibb.co/N9CjLr2/book-logo.pn" alt="Coming Soon...." />
-                    <p className="text-base"><span className="footer-title text-3xl">Demo Company</span><br/>Providing demo Since 1992</p>
+                    <p className="text-base"><span className="footer-title text-3xl">Housing Company</span><br/>Providing Home Service Since 1999</p>
                 </aside> 
                 <nav>
                     <h6 className="footer-title">Services</h6> 
