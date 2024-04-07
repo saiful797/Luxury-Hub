@@ -1,7 +1,7 @@
 import {Outlet} from 'react-router-dom'
 const Roots = () => {
     return (
-        <div>
+        <div className="font-poppins">
             <Outlet></Outlet>
         </div>
     );
