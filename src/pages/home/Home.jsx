@@ -1,7 +1,11 @@
+import Slider from "../slider-swiper/Slider";
+
 const Home = () => {
     return (
-        <div>
-            <h1 className="text-3xl font-bold">This is home</h1>
+        <div className="">
+            <div className="">
+                <Slider></Slider>
+            </div>
         </div>
     );
 };
