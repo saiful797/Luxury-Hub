@@ -4,8 +4,8 @@ const Footer = () => {
         <footer className="p-10 bg-base-200 text-base-content text-center mt-10">
             <div className="footer max-w-6xl grid  place-content-center md:place-content-between	">
                 <aside>
-                   <img className="w-20 rounded-3xl mx-auto" src="https://i.ibb.co/N9CjLr2/book-logo.pn" alt="Coming Soon...." />
-                    <p className="text-base"><span className="footer-title text-3xl">Housing Company</span><br/>Providing Home Service Since 1999</p>
+                   <img className="w-16 rounded-3xl mx-auto" src="https://i.ibb.co/QrT2g6R/logo.png" alt="Coming Soon...." />
+                    <p className="text-base"><a className="text-4xl font-bold"><span className="text-[#22c1c3]">Luxury </span> <span className="text-[#fdbb2d]">Hub</span></a><br/>Providing Home Service Since 1999</p>
                 </aside> 
                 <nav>
                     <h6 className="footer-title">Services</h6> 
