@@ -1,0 +1,110 @@
+[
+    {
+      "estate_title": "Exquisite Beachfront Villa",
+      "id": "1",
+      "segment_name": "Villas",
+      "description": "Indulge in the epitome of coastal luxury with this exquisite beachfront villa. Situated along the pristine shores of the Caribbean, this stunning residence offers unparalleled views of turquoise waters and white sandy beaches. Spanning over 8,000 square feet, this architectural masterpiece features expansive living areas, floor-to-ceiling windows, and seamless indoor-outdoor living spaces. Relax in the infinity pool overlooking the ocean, unwind in the private spa, or host unforgettable gatherings in the spacious entertainment areas. With its prime location and world-class amenities, this beachfront villa offers a lifestyle of luxury and tranquility.",
+      "price": "$8,500,000",
+      "status": "sale",
+      "area": "8,000 sq ft",
+      "location": "Caribbean",
+      "facilities": ["Infinity pool", "Private beach access", "Spa", "Entertainment areas"],
+      "image": "https://i.ibb.co/JtWr77s/Beachfront-Villa.jpg"
+    },
+    {
+      "estate_title": "Luxurious Oceanfront Penthouse",
+      "id": "2",
+      "segment_name": "Penthouses",
+      "description": "Elevate your lifestyle with this luxurious oceanfront penthouse offering breathtaking views of the Pacific Ocean. Perched atop a prestigious high-rise building, this expansive residence boasts over 5,000 square feet of living space and sophisticated contemporary design. Floor-to-ceiling windows bathe the interior in natural light while providing panoramic vistas of the coastline. Enjoy the ultimate in indoor-outdoor living with multiple terraces, perfect for entertaining or relaxing in the sea breeze. With state-of-the-art amenities including a private gym, spa, and concierge service, this oceanfront penthouse is a sanctuary of modern luxury.",
+      "price": "$6,200,000",
+      "status": "sale",
+      "area": "5,000 sq ft",
+      "location": "Los Angeles, California",
+      "facilities": ["Multiple terraces", "Private gym", "Spa", "Concierge service"],
+      "image": "https://i.ibb.co/v1Z8mt8/Luxurious-Oceanfront-Penthouse.jpg"
+    },
+    {
+      "estate_title": "Exclusive Private Island Retreat",
+      "id": "3",
+      "segment_name": "Private Islands",
+      "description": "Escape to your own private paradise with this exclusive island retreat nestled in the heart of the South Pacific. Spanning over 50 acres of pristine coastline, this secluded sanctuary offers unparalleled privacy and serenity. The main residence features luxurious accommodations, including spacious bedrooms, gourmet kitchen, and elegant living areas overlooking the azure waters. Outside, lush tropical gardens, a private beach, and infinity pool await, providing endless opportunities for relaxation and recreation. With its breathtaking natural beauty and world-class amenities, this private island retreat is truly a once-in-a-lifetime opportunity.",
+      "price": "$15,000,000",
+      "status": "sale",
+      "area": "50 acres",
+      "location": "South Pacific",
+      "facilities": ["Private beach", "Infinity pool", "Tropical gardens", "Gourmet kitchen"],
+      "image": "https://i.ibb.co/F3jnWnz/Exclusive-Private-Island-Retreat.jpg"
+    },
+    {
+      "estate_title": "Magnificent Mansion Estate",
+      "id": "4",
+      "segment_name": "Mansions",
+      "description": "Live in unparalleled luxury with this magnificent mansion estate situated on sprawling grounds in the heart of Beverly Hills. Boasting over 15,000 square feet of living space, this palatial residence offers the utmost in grandeur and sophistication. Designed for lavish entertaining and comfortable living, the estate features multiple living areas, a formal dining room, gourmet kitchen, and home theater. Outside, manicured gardens, a sparkling pool, and tennis court create a private oasis for relaxation and recreation. With its prime location and world-class amenities, this mansion estate is a true masterpiece of luxury living.",
+      "price": "$25,000,000",
+      "status": "sale",
+      "area": "15,000 sq ft",
+      "location": "Beverly Hills, California",
+      "facilities": ["Swimming pool", "Tennis court", "Home theater", "Manicured gardens"],
+      "image": "https://i.ibb.co/h8q1SyW/Magnificent-Mansion-Estate.jpg"
+    },
+    {
+      "estate_title": "Exclusive Resort Retreat",
+      "id": "5",
+      "segment_name": "Resorts",
+      "description": "Experience ultimate luxury and relaxation at this exclusive resort retreat nestled amidst lush tropical gardens in the Maldives. Each luxurious villa offers breathtaking views of the crystal-clear waters and direct access to pristine white sandy beaches. Indulge in world-class amenities, including a private infinity pool, spa, and gourmet dining experiences. Whether you're seeking adventure or relaxation, this secluded paradise offers something for everyone, from snorkeling and diving to yoga and meditation. With personalized service and unparalleled natural beauty, this resort retreat promises an unforgettable escape from the ordinary.",
+      "price": "$1,500 per night",
+      "status": "rent",
+      "area": "Beachfront property",
+      "location": "Maldives",
+      "facilities": ["Private infinity pool", "Spa", "Gourmet dining", "Direct beach access"],
+      "image": "https://i.ibb.co/HDphLL6/Exclusive-Resort-Retreat-muldives.jpg"
+    },
+    {
+      "estate_title": "Luxury Villa with Panoramic Views",
+      "id": "6",
+      "segment_name": "Villas",
+      "description": "Discover luxury living at its finest in this stunning villa with panoramic views of the Mediterranean Sea. Located in the exclusive enclave of Costa del Sol, Spain, this elegant residence offers over 6,000 square feet of meticulously designed living space. Floor-to-ceiling windows bathe the interior in natural light while capturing breathtaking views of the coastline. The expansive outdoor terrace features a private infinity pool, perfect for enjoying the Mediterranean sunsets. With its prime location and world-class amenities, this luxury villa offers a lifestyle of sophistication and tranquility.",
+      "price": "$3,800,000",
+      "status": "sale",
+      "area": "6,000 sq ft",
+      "location": "Costa del Sol, Spain",
+      "facilities": ["Panoramic views", "Infinity pool", "Outdoor terrace", "Gourmet kitchen"],
+      "image": "https://i.ibb.co/0Fpk3Kb/Luxury-Villa-with-Panoramic-Views.jpg"
+    },
+    {
+      "estate_title": "Tropical Paradise Retreat",
+      "id": "7",
+      "segment_name": "Resorts",
+      "description": "Escape to a tropical paradise with this exclusive resort retreat nestled on the shores of Bora Bora. Surrounded by crystal-clear waters and pristine white sandy beaches, this luxurious resort offers the ultimate in relaxation and rejuvenation. Each overwater bungalow features elegant furnishings, breathtaking views, and direct access to the turquoise lagoon. Indulge in world-class amenities including a spa, gourmet dining, and water sports activities. Whether you're lounging on your private sundeck or exploring the vibrant marine life, this tropical paradise retreat promises an unforgettable experience.",
+      "price": "$2,000 per night",
+      "status": "rent",
+      "area": "Beachfront property",
+      "location": "Bora Bora",
+      "facilities": ["Overwater bungalows", "Spa", "Gourmet dining", "Water sports"],
+      "image": "https://i.ibb.co/K6Pcq6y/Tropical-Paradise-Retreat.jpg"
+    },
+    {
+      "estate_title": "Secluded Mountain Chalet",
+      "id": "8",
+      "segment_name": "Chalets",
+      "description": "Escape to the serenity of the mountains with this secluded chalet nestled amidst the snow-capped peaks of the Swiss Alps. Surrounded by pristine wilderness and panoramic views, this luxurious retreat offers the perfect blend of rustic charm and modern amenities. Cozy up by the fireplace in the spacious living area, or unwind in the outdoor hot tub overlooking the majestic mountains. With its prime location near world-class ski resorts and hiking trails, this mountain chalet is the ideal destination for outdoor enthusiasts and nature lovers alike.",
+      "price": "$4,500,000",
+      "status": "sale",
+      "area": "3,000 sq ft",
+      "location": "Swiss Alps",
+      "facilities": ["Fireplace", "Outdoor hot tub", "Ski-in/ski-out access", "Panoramic views"],
+      "image": "https://i.ibb.co/hcrCGGD/Secluded-Mountain-Chalet.jpg"
+    },
+    {
+      "estate_title": "Exclusive Waterfront Retreat",
+      "id": "9",
+      "segment_name": "Beachfront Properties",
+      "description": "Escape to a world of luxury and tranquility with this exclusive waterfront retreat located on the shores of Lake Como, Italy. Nestled amidst lush gardens and overlooking the sparkling waters of the lake, this elegant villa offers the ultimate in sophistication and relaxation. The spacious interior features high ceilings, elegant furnishings, and panoramic views from every room. Step outside to your own private oasis, where a waterfront terrace, infinity pool, and boathouse await. With its prime location and world-class amenities, this waterfront retreat is truly a masterpiece of Italian luxury living.",
+      "price": "$12,000,000",
+      "status": "sale",
+      "area": "10,000 sq ft",
+      "location": "Lake Como, Italy",
+      "facilities": ["Waterfront terrace", "Infinity pool", "Boathouse", "Lush gardens"],
+      "image": "https://i.ibb.co/0XKBy3c/Exclusiv-Waterfront-Retreat.jpg"
+    }
+  ]
