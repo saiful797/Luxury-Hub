@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Oceanfront Paradise",
+    "location": "Maui, Hawaii",
+    "post_description": "Discover unparalleled luxury in this oceanfront paradise located in the exclusive area of Maui. With 6 bedrooms, 8 bathrooms, and expansive living spaces, this estate offers the ultimate retreat for relaxation and entertainment. Enjoy breathtaking views of the Pacific Ocean from every room, indulge in gourmet meals prepared in the chef's kitchen, and unwind in the infinity pool overlooking the pristine coastline. Impeccably designed with the finest finishes and furnishings, this estate epitomizes island living at its finest.",
+    "image": "https://i.ibb.co/r0CLX2M/Hawaii.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Modern Marvel in Silicon Valley",
+    "location": "Palo Alto, California",
+    "post_description": "Experience the height of sophistication in this modern marvel located in the heart of Silicon Valley. Boasting sleek architecture, 5 bedrooms, and 6 bathrooms, this estate offers an unparalleled blend of luxury and technology. Entertain guests in the spacious open-concept living areas, relax in the private courtyard with a fire pit, or retreat to the state-of-the-art home theater for movie nights. With its prime location and cutting-edge design, this property is perfect for those seeking the ultimate in contemporary living.",
+    "image": "https://i.ibb.co/DDg9H8Q/Modern-Marvel-Silicon-Valley.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Luxurious Chalet in the Swiss Alps",
+    "location": "Verbier, Switzerland",
+    "post_description": "Escape to the Swiss Alps in this luxurious chalet nestled in the charming village of Verbier. Featuring 4 bedrooms, 4 bathrooms, and stunning mountain views, this property offers an idyllic retreat in all seasons. Cozy up by the fireplace in the winter, dine al fresco on the spacious terrace in the summer, or relax in the private sauna after a day of skiing. With its rustic charm and modern amenities, this chalet is the perfect mountain getaway for discerning travelers.",
+    "image": "https://i.ibb.co/TkzYhGB/Luxurious-Chalet-Swiss-Alps.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Elegant Estate in the Hamptons",
+    "location": "East Hampton, New York",
+    "post_description": "Indulge in the epitome of East Coast luxury in this elegant estate located in the prestigious Hamptons. With 7 bedrooms, 9 bathrooms, and sprawling grounds, this property offers privacy and tranquility just minutes from the beach. Host lavish gatherings in the formal dining room, relax in the sunroom overlooking the manicured gardens, or take a dip in the heated pool surrounded by lush landscaping. With its classic architecture and timeless elegance, this estate is the epitome of Hamptons living.",
+    "image": "https://i.ibb.co/TqLJ6Br/Elegant-Estate-in-the-Hamptons.jpg"
+  }
+]
