@@ -20,7 +20,7 @@ const Estate = ({estate}) => {
                     <h1>Facilities: <span className='text-lime-500 text-lg font-bold'><span className='text-[#22c1c3]'>#</span>{facilities[0]} <span className='text-[#22c1c3]'>#</span>{facilities[1]}</span></h1>
                 </div>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-outline text-white text-lg font-medium">View Property</button>
+                    <button className="btn btn-outline btn-success text-xl font-medium">View Property</button>
                 </div>
             </div>
         </div>
