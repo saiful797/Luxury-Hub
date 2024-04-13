@@ -10,7 +10,7 @@ const Estates = () => {
     })
 
     return (
-        <div>
+        <div className="grid md:grid-cols-3 mt-10">
             {
                 estates.map(estate => <Estate key={estate.id} estate={estate}></Estate>)
             }
