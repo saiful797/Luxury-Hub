@@ -19,11 +19,11 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div>
-                    <a className="text-4xl md:text-6xl font-bold"><span className="text-[#22c1c3]">Luxury </span> <span className="text-[#fdbb2d]">Hub</span></a>
+                    <a className="text-3xl md:text-6xl font-bold"><span className="text-[#22c1c3]">Luxury </span> <span className="text-[#fdbb2d]">Hub</span></a>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 gap-2 text-md font-bold">
+                <ul className="menu menu-horizontal px-1 gap-2 text-lg font-bold">
                      {navLinks}
                 </ul>
             </div>
@@ -34,8 +34,8 @@ const NavBar = () => {
                     </div>
                 </div>
                 <div className="space-x-3 hidden md:flex">
-                    <Link className="btn btn-sm" to="/login">Login</Link>
-                    <Link className="btn btn-sm" to="/register">Register</Link>
+                    <Link className="btn btn-sm btn-outline btn-accent text-lg" to="/login">Login</Link>
+                    <Link className="btn btn-sm btn-outline btn-accent text-lg" to="/register">Register</Link>
                 </div>
             </div>
         </div>
