@@ -1,20 +1,27 @@
-import { Navigation, Pagination, A11y, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, A11y, Autoplay, EffectCube } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
+import 'swiper/css/effect-cube';
 
 const Slider = () => {
     return (
         <Swiper
-            modules={[Navigation, Pagination, A11y, Autoplay]}
+            modules={[Navigation, Pagination, A11y, Autoplay, EffectCube]}
+            effect={'cube'}
+            cubeEffect={{
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            }}
             spaceBetween={50}
             slidesPerView={1}
             navigation
-            autoplay={{delay: 2000}}
+            autoplay={{delay: 3000}}
             pagination={{ clickable: true }}
             onSwiper={(swiper) => console.log(swiper)}
             onSlideChange={() => console.log('slide change')}

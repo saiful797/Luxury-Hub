@@ -1,3 +1,4 @@
+import Estates from "../Estates/Estates";
 import Slider from "../slider-swiper/Slider";
 
 const Home = () => {
@@ -10,7 +11,7 @@ const Home = () => {
                 <Slider></Slider>
             </div>
             <div>
-
+                <Estates></Estates>
             </div>
         </div>
     );
