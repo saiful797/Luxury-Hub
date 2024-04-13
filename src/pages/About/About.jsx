@@ -6,9 +6,9 @@ const About = () => {
                 <hr />
                 <hr />
             </div>
-            <div className="mt-5 space-y-2 text-lg font-medium text-gray-600 border rounded-2xl bg-slate-50 shadow-sm shadow-black p-5">
+            <div className="mt-5 space-y-2 text-lg font-medium text-gray-600 border rounded-2xl bg-slate-50 shadow-sm shadow-black p-5 text-justify">
                 <p>
-                    <span className="text-green-500 text-lg font-medium">Welcome</span> to<span className="text-[#22c1c3]"> Luxury </span> <span className="text-[#fdbb2d]">Hub </span>, where unparalleled luxury meets exceptional real estate. We are your premier destination for discovering the most exquisite properties around the world, meticulously curated to meet the discerning tastes of our esteemed clientele.
+                <span className="text-green-600 text-xl font-bold">Welcome</span> to<span className="text-[#22c1c3]"> Luxury </span> <span className="text-[#fdbb2d]">Hub </span>, where unparalleled luxury meets exceptional real estate. We are your premier destination for discovering the most exquisite properties around the world, meticulously curated to meet the discerning tastes of our esteemed clientele.
                 </p>
 
                 <p>

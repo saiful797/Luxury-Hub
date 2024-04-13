@@ -2,7 +2,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
     const navLinks=<>
-         <li><NavLink to="/">Home </NavLink></li>
+         <li className="text-[#58fcff]"><NavLink to="/">Home </NavLink></li>
          <li><NavLink to="/about">About</NavLink></li>
          <li className="md:hidden"><NavLink to="/login">Login</NavLink></li>
          <li className="md:hidden"><NavLink to="/register">Register</NavLink></li>
@@ -23,7 +23,7 @@ const NavBar = () => {
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 gap-2 text-lg font-bold md:text-white">
+                <ul className="menu menu-horizontal px-1 gap-2 text-lg font-bold text-[#fdbb2d]">
                      {navLinks}
                 </ul>
             </div>
