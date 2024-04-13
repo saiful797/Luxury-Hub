@@ -4,7 +4,7 @@ const ErrorElement = () => {
     return (
         <div className="flex justify-center items-center mt-56">
             <div className="text-center text-xl font-bold space-y-5">
-                <h1>Error 404!!</h1>
+                <h1>Error 404!!!</h1>
                 <p>Page Does Not Found!!</p>
             <div>
                 <Link to="/">
