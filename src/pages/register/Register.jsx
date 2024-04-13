@@ -1,6 +1,6 @@
 const Register = () => {
     return (
-        <div className="min-h-screen bg-base-200 mt-5">
+        <div className="min-h-screen bg-base-200 mt-5 rounded-2xl">
             <div className="hero-content flex-col">
                 <div className="card w-full max-w-sm shadow-green-500 shadow-sm bg-base-100 mt-16">
                     <form className="card-body">

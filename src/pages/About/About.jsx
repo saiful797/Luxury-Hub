@@ -4,6 +4,7 @@ const About = () => {
             <div className="mt-5">
                 <h1 className="text-4xl font-bold text-center">About US</h1>
                 <hr />
+                <hr />
             </div>
             <div className="mt-5 space-y-2 text-lg font-medium text-gray-600 border rounded-2xl bg-slate-50 shadow-sm shadow-black p-5">
                 <p>

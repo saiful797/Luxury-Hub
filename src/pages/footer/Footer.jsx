@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <footer className="p-10 bg-base-200 text-base-content text-center mt-10">
+        <footer className="p-10 bg-base-200 text-base-content text-center mt-10 rounded-2xl">
             <div className="footer max-w-6xl grid  place-content-center md:place-content-between	">
                 <aside>
                    <img className="w-16 rounded-3xl mx-auto" src="https://i.ibb.co/QrT2g6R/logo.png" alt="Coming Soon...." />
