@@ -2,14 +2,14 @@ import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
     const navLinks=<>
-         <li className="md:text-[#58fcff]"><NavLink to="/">Home </NavLink></li>
+         <li className="md:text-[#22c1c3] md:text-2xl"><NavLink to="/">Home </NavLink></li>
          <li><NavLink to="/about">About</NavLink></li>
          <li><NavLink to="/contact">Contact Us</NavLink></li>
          <li className="md:hidden"><NavLink to="/login">Login</NavLink></li>
          <li className="md:hidden"><NavLink to="/register">Register</NavLink></li>
     </>
     return (
-        <div className="navbar bg-blue-950 p-3 mt-5">
+        <div className="navbar bg-blue-950 p-3 mt-3">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-sm bg-gray-100 lg:hidden mr-2">
