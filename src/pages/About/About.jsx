@@ -12,7 +12,7 @@ const About = () => {
                 </p>
 
                 <p>
-                    At Luxury Hub, we understand that a home is more than just a place to live; it's a reflection of your lifestyle, your aspirations, and your unique sense of identity. Whether you're searching for a stunning waterfront villa, a chic urban penthouse, or a sprawling countryside estate, Luxury Hub offers an exclusive selection of properties that redefine luxury living.
+                    At Luxury Hub, we understand that a home is more than just a place to live; it is a reflection of your lifestyle, your aspirations, and your unique sense of identity. Whether you are searching for a stunning waterfront villa, a chic urban penthouse, or a sprawling countryside estate, Luxury Hub offers an exclusive selection of properties that redefine luxury living.
                 </p>
 
                 <p>
@@ -20,11 +20,11 @@ const About = () => {
                 </p>
 
                 <p>
-                    But Luxury Hub is more than just a marketplace for luxury real estate. It's a destination for inspiration, offering insights into the latest trends in architecture, design, and lifestyle. Through our curated content and exclusive events, we aim to immerse you in the world of luxury living and empower you to make informed decisions about your real estate investments.
+                    But Luxury Hub is more than just a marketplace for luxury real estate. It is a destination for inspiration, offering insights into the latest trends in architecture, design, and lifestyle. Through our curated content and exclusive events, we aim to immerse you in the world of luxury living and empower you to make informed decisions about your real estate investments.
                 </p>
 
                 <p>
-                    Whether you're searching for your dream home or looking to showcase your property to a global audience of discerning buyers, Luxury Hub is here to exceed your expectations. Welcome to Luxury Hub, where extraordinary real estate awaits.
+                    Whether you are searching for your dream home or looking to showcase your property to a global audience of discerning buyers, Luxury Hub is here to exceed your expectations. Welcome to Luxury Hub, where extraordinary real estate awaits.
                 </p>
             </div>
         </div>
