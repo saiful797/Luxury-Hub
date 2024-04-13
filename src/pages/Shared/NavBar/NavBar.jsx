@@ -3,6 +3,9 @@ import { Link, NavLink } from "react-router-dom";
 const NavBar = () => {
     const navLinks=<>
          <li><NavLink to="/">Home </NavLink></li>
+         <li><NavLink to="/about">About</NavLink></li>
+         <li className="md:hidden"><NavLink to="/login">Login</NavLink></li>
+         <li className="md:hidden"><NavLink to="/register">Register</NavLink></li>
     </>
     return (
         <div className="navbar bg-base-100">
@@ -16,7 +19,7 @@ const NavBar = () => {
                     </ul>
                 </div>
                 <div>
-                    <a className="text-6xl font-bold"><span className="text-[#22c1c3]">Luxury </span> <span className="text-[#fdbb2d]">Hub</span></a>
+                    <a className="text-4xl md:text-6xl font-bold"><span className="text-[#22c1c3]">Luxury </span> <span className="text-[#fdbb2d]">Hub</span></a>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -25,7 +28,15 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link className="btn btn-sm" to="/login">Login</Link>
+                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
+                    <div className="w-8 rounded-full">
+                        <img src="https://i.ibb.co/Jq10C13/user.png" alt="User profile..."/>
+                    </div>
+                </div>
+                <div className="space-x-3 hidden md:flex">
+                    <Link className="btn btn-sm" to="/login">Login</Link>
+                    <Link className="btn btn-sm" to="/register">Register</Link>
+                </div>
             </div>
         </div>
     );
