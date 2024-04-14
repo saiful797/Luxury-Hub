@@ -28,7 +28,7 @@ const LuxuryLocations = () => {
                     </div>
                 </div>
                 <div>
-                    <p>properties around the world, relying on trusted and independent professionals in luxury real estate. LuxuryEstate.com will open your eyes to the most enchanting properties in the world: luxury homes, prestigious estates, classic residences, unique castles and country homes. To rediscover that beauty is not a luxury. It is a necessity.</p>
+                    <p>properties around the world, relying on trusted and independent professionals in luxury real estate. LuxuryHub.com will open your eyes to the most enchanting properties in the world: luxury homes, prestigious estates, classic residences, unique castles and country homes. To rediscover that beauty is not a luxury. It is a necessity.</p>
                     <div className="flex justify-around mt-5">
                         <div>
                             <h1 className="text-xl text-lime-600"><u>SOUTH AMERICA</u></h1>

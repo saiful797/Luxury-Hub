@@ -17,8 +17,16 @@ const Estate = ({estate}) => {
                         Location: <span  className='text-xl font-thin'>{location}</span>
                     </p>
                 </div>
-                <div className='flex'>
-                    <h1>Facilities: <span className='text-lime-500 text-lg font-bold'><span className='text-[#22c1c3]'>#</span>{facilities[0]} <span className='text-[#22c1c3]'>#</span>{facilities[1]}</span></h1>
+                <div className='flex gap-2'>
+                    <h1>Facilities:</h1>
+                    <div className='grid'>
+                        <p className='text-lime-500 text-lg font-bold'>
+                            <span className='text-[#22c1c3]'>#</span>{facilities[0]}
+                        </p>
+                        <p className='text-lime-500 text-lg font-bold'>
+                            <span className='text-[#22c1c3]'>#</span>{facilities[1]}
+                        </p>
+                    </div>
                 </div>
                 <Link to={`/:${id}`}>
                     <div className="card-actions justify-end">
