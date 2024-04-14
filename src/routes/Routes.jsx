@@ -5,6 +5,7 @@ import ErrorElement from "../pages/errorElement/ErrorElement";
 import About from "../pages/About/About";
 import Login from "../pages/login/Login";
 import Register from "../pages/register/Register";
+import ViewPropertyDetails from "../viewPropertyDetails/ViewPropertyDetails";
 
 
 const router = createBrowserRouter([
@@ -16,6 +17,11 @@ const router = createBrowserRouter([
             {
                 path: '/',
                 element: <Home></Home>,
+            },
+            {
+                path: '/:id/',
+                element: <ViewPropertyDetails></ViewPropertyDetails>,
+                loader: () => fetch('luxuryHub.json')
             },
             {
                 path:'/about',

@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 const Estate = ({estate}) => {
-    const {image, estate_title,status,segment_name,location,facilities} = estate;
+    const {id,image, estate_title,status,segment_name,location,facilities} = estate;
     return (
         <div className="card w-96 glass mt-10 bg-blue-950 text-white">
             <figure><img className='w-full h-72' src={image} alt="car!"/></figure>
@@ -19,9 +20,11 @@ const Estate = ({estate}) => {
                 <div className='flex'>
                     <h1>Facilities: <span className='text-lime-500 text-lg font-bold'><span className='text-[#22c1c3]'>#</span>{facilities[0]} <span className='text-[#22c1c3]'>#</span>{facilities[1]}</span></h1>
                 </div>
-                <div className="card-actions justify-end">
-                    <button className="btn btn-outline btn-success text-xl font-medium">View Property</button>
-                </div>
+                <Link to={`/:${id}`}>
+                    <div className="card-actions justify-end">
+                        <button className="btn btn-outline btn-success text-xl font-medium">View Property</button>
+                    </div>
+                </Link>
             </div>
         </div>
     );
