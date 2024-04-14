@@ -1,4 +1,4 @@
-import { Link, useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 
 const ViewPropertyDetails = () => {
     const estates = useLoaderData();
@@ -41,13 +41,6 @@ const ViewPropertyDetails = () => {
                         <p className='text-teal-500 text-lg font-bold ml-10'><span className='text-[#fdbb2d]'>#</span>{facilities[3]}</p>
                     </div>
                 </div>
-
-                <Link to="/">
-                    <div className="card-actions justify-end">
-                        <button className="btn btn-outline btn-success text-xl font-medium">Back to Home</button>
-                    </div>
-                </Link>
-                
             </div>
         </div>
     );
