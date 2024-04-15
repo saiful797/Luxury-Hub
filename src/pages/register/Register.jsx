@@ -1,4 +1,11 @@
+import { useContext } from "react";
+import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
+
 const Register = () => {
+
+    const {createUser} =  useContext(AuthContext);
+    console.log(createUser);
+    
     return (
         <div className="min-h-screen bg-base-200 mt-5 rounded-2xl">
             <div className="hero-content flex-col">
