@@ -1,6 +1,7 @@
-import LuxuryLocations from "../../luxuryLocations/LuxuryLocations";
+
 import Estates from "../Estates/Estates";
 import Post from "../Posts/Posts";
+import LuxuryLocations from "../luxuryLocations/LuxuryLocations";
 import Slider from "../slider-swiper/Slider";
 
 const Home = () => {

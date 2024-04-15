@@ -6,7 +6,7 @@ const Register = () => {
 
     const {createUser} =  useContext(AuthContext);
 
-    const {register, handleSubmit, watch,} = useForm()
+    const {register, handleSubmit} = useForm()
     
     const onSubmit = (data) => {
         const {email, password} = data;
