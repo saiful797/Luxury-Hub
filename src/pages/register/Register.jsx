@@ -1,17 +1,28 @@
 import { useContext } from "react";
 import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const Register = () => {
-
     const {createUser} =  useContext(AuthContext);
 
     const {register, handleSubmit} = useForm()
+
+    // Navigation Process
+    const navigate = useNavigate();
+    // const location = useLocation();
     
     const onSubmit = (data) => {
         const {email, password} = data;
-        createUser(email, password);
+        createUser(email, password)
+        .then((result) =>{
+            if(result.user){
+                navigate(location?.state || '/');
+            }
+            else {
+                navigate('/')
+            }
+        })
     }
 
   

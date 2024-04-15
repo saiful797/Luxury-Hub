@@ -1,19 +1,25 @@
 import { useContext } from "react";
 import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "../socialLogin/SocialLogin";
 
 const Login = () => {
     const {singInUser} = useContext(AuthContext);
 
     const {register, handleSubmit} = useForm()
+
+    // Navigation Process
+    const navigate = useNavigate();
+    const location = useLocation();
     
     const onSubmit = (data) => {
         const {email, password} = data;
         singInUser(email, password)
-        .then(result =>{
-            console.log(result.user);
+        .then((result) =>{
+            if(result.user){
+                navigate(location?.state || '/');
+            }
         })
         .catch(error =>{
             console.log(error);
