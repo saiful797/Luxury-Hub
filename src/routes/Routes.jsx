@@ -5,7 +5,7 @@ import ErrorElement from "../pages/errorElement/ErrorElement";
 import About from "../pages/About/About";
 import Login from "../pages/login/Login";
 import Register from "../pages/register/Register";
-import ViewPropertyDetails from "../viewPropertyDetails/ViewPropertyDetails";
+import ViewPropertyDetails from "../pages/viewPropertyDetails/ViewPropertyDetails";
 
 
 const router = createBrowserRouter([
