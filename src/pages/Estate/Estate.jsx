@@ -28,11 +28,13 @@ const Estate = ({estate}) => {
                         </p>
                     </div>
                 </div>
-                <Link to={`/:${id}`}>
-                    <div className="card-actions justify-end">
-                        <button className="btn btn-outline btn-success text-xl font-medium">View Property</button>
-                    </div>
-                </Link>
+                <div className='mt-5'>
+                    <Link to={`/:${id}`}>
+                        <div className="card-actions justify-end">
+                            <button className="btn btn-outline btn-success text-xl font-medium">View Property</button>
+                        </div>
+                    </Link>
+                </div>
             </div>
         </div>
     );
