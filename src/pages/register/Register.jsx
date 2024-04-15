@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
 import { useForm } from "react-hook-form";
+import { Link } from "react-router-dom";
 
 const Register = () => {
 
@@ -13,11 +14,14 @@ const Register = () => {
         createUser(email, password);
     }
 
-    
+  
     return (
         <div className="min-h-screen bg-base-200 mt-5 rounded-2xl">
             <div className="hero-content flex-col">
-                <div className="card w-full max-w-sm shadow-green-500 shadow-sm bg-base-100 mt-16">
+                <div className="text-center">
+                    <h1 className="text-5xl font-bold">Register now!</h1>
+                </div>
+                <div className="card w-full max-w-sm shadow-green-500 shadow-sm bg-base-100">
                     <form onSubmit={handleSubmit(onSubmit)} className="card-body">
                         <div className="form-control">
                             <label className="label">
@@ -43,8 +47,12 @@ const Register = () => {
                             </label>
                             <input type="password" placeholder="Password..." name="password" className="input input-bordered" {...register("password")} required />
                         </div>
-                        <div className="form-control mt-6">
+                        <div className="form-control mt-4">
                             <button className="btn btn-success text-white text-lg">Register</button>
+                        </div>
+                        <div className="flex justify-between">
+                            <h1>Have an account?</h1>
+                            <Link to="/login"><p className="text-green-600 font-bold hover:text-black"><u>Please Login</u></p></Link>
                         </div>
                     </form>
                 </div>
