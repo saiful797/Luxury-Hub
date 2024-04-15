@@ -1,10 +1,7 @@
 import PropTypes from 'prop-types';
-import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { AuthContext } from '../FirebaseProvider/FirebaseProvider';
 
 const Estate = ({estate}) => {
-    const {user} = useContext(AuthContext);
 
     const {id,image, estate_title,status,segment_name,location,facilities} = estate;
     
