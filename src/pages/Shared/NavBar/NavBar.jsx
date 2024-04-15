@@ -1,6 +1,10 @@
+import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../FirebaseProvider/FirebaseProvider";
 
 const NavBar = () => {
+    const {logout, user}= useContext(AuthContext);
+
     const navLinks=<>
          <li className="md:text-[#22c1c3] md:text-2xl"><NavLink to="/">Home </NavLink></li>
          <li><NavLink to="/about">About</NavLink></li>
@@ -28,16 +32,43 @@ const NavBar = () => {
                      {navLinks}
                 </ul>
             </div>
+            
             <div className="navbar-end">
-                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                    <div className="w-8 rounded-full">
-                        <img src="https://i.ibb.co/Jq10C13/user.png" alt="User profile..."/>
+                {
+                    user?.email?<div className="dropdown dropdown-end">
+
+                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                            <div className="w-10 rounded-full">
+                                {
+                                    user?.photoURL? <img src={user.photoURL}/>
+                                    :
+                                    <img src="https://i.ibb.co/Jq10C13/user.png" alt="User profile..."/>
+                                }
+                            </div>
+                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-10 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li>
+                                    <button className="btn btn-sm btn-ghost">
+                                        {
+                                        user?.displayName? <h1>{user.displayName}</h1>
+                                        :
+                                        <h1>User</h1>
+                                        }
+                                    </button>
+                                </li>
+                                <li>
+                                    <button onClick={logout} className="btn btn-sm btn-outline btn-success">Logout</button>
+                                </li>
+
+                            </ul>
+                        </label>
                     </div>
-                </div>
-                <div className="space-x-3 hidden md:flex">
-                    <Link className="btn btn-sm btn-outline btn-accent text-base" to="/login">Login</Link>
-                    <Link className="btn btn-sm btn-outline btn-accent text-base" to="/register">Register</Link>
-                </div>
+                    
+                    :
+                    <div className="space-x-3 hidden md:flex">
+                        <Link className="btn btn-sm btn-outline btn-accent text-base" to="/login">Login</Link>
+                        <Link className="btn btn-sm btn-outline btn-accent text-base" to="/register">Register</Link>
+                    </div>
+                }
             </div>
         </div>
     );
