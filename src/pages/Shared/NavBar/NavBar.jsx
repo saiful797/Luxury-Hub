@@ -9,8 +9,12 @@ const NavBar = () => {
          <li className="md:text-[#22c1c3] md:text-2xl"><NavLink to="/">Home </NavLink></li>
          <li><NavLink to="/about">About</NavLink></li>
          <li><NavLink to="/contact">Contact Us</NavLink></li>
-         <li className="md:hidden"><NavLink to="/login">Login</NavLink></li>
-         <li className="md:hidden"><NavLink to="/register">Register</NavLink></li>
+         {
+            user?<p></p>: <div>
+                <li className="md:hidden"><NavLink to="/login">Login</NavLink></li>
+                <li className="md:hidden"><NavLink to="/register">Register</NavLink></li>
+            </div>
+         }
     </>
     return (
         <div className="navbar bg-blue-950 p-3 mt-3">
@@ -35,7 +39,7 @@ const NavBar = () => {
             
             <div className="navbar-end">
                 {
-                    user?.email?<div className="dropdown dropdown-end">
+                    user?<div className="dropdown dropdown-end">
 
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
@@ -45,7 +49,7 @@ const NavBar = () => {
                                     <img src="https://i.ibb.co/Jq10C13/user.png" alt="User profile..."/>
                                 }
                             </div>
-                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-10 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-20 z-[1] p-2 shadow bg-base-100 rounded-box w-72 mx-auto space-y-2">
                                 <li>
                                     <button className="btn btn-sm btn-ghost">
                                         {
@@ -54,6 +58,11 @@ const NavBar = () => {
                                         <h1>User</h1>
                                         }
                                     </button>
+                                </li>
+                                <li>
+                                    {
+                                        user?.email? <h1>{user.email}</h1> :''
+                                    }
                                 </li>
                                 <li>
                                     <button onClick={logout} className="btn btn-sm btn-outline btn-success">Logout</button>

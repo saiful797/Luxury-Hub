@@ -1,8 +1,13 @@
 import PropTypes from 'prop-types';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../FirebaseProvider/FirebaseProvider';
 
 const Estate = ({estate}) => {
+    const {user} = useContext(AuthContext);
+
     const {id,image, estate_title,status,segment_name,location,facilities} = estate;
+    
     return (
         <div className="card w-96 glass mt-10 bg-blue-950 text-white">
             <figure><img className='w-full h-72' src={image} alt="car!"/></figure>
@@ -29,10 +34,10 @@ const Estate = ({estate}) => {
                     </div>
                 </div>
                 <div className='mt-5'>
-                    <Link to={`/:${id}`}>
+                    <Link to={`/${id}`}> 
                         <div className="card-actions justify-end">
                             <button className="btn btn-outline btn-success text-xl font-medium">View Property</button>
-                        </div>
+                        </div>   
                     </Link>
                 </div>
             </div>

@@ -3,9 +3,8 @@ import { useLoaderData, useParams } from "react-router-dom";
 const ViewPropertyDetails = () => {
     const estates = useLoaderData();
     const {id} = useParams();
-    const idNum = id.charAt(1);
 
-    const estate = estates.find(estate => estate.id === idNum);
+    const estate = estates.find(estate => estate.id === id);
 
     const {image,estate_title,segment_name,status,area,price,location,description,facilities} = estate;
 

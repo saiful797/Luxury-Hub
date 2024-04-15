@@ -6,6 +6,7 @@ import About from "../pages/About/About";
 import Login from "../pages/login/Login";
 import Register from "../pages/register/Register";
 import ViewPropertyDetails from "../pages/viewPropertyDetails/ViewPropertyDetails";
+import PrivateRoute from "../pages/Shared/privateRoute/PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -20,7 +21,9 @@ const router = createBrowserRouter([
             },
             {
                 path: '/:id/',
-                element: <ViewPropertyDetails></ViewPropertyDetails>,
+                element: <PrivateRoute>
+                    <ViewPropertyDetails></ViewPropertyDetails>
+                </PrivateRoute>,
                 loader: () => fetch('luxuryHub.json')
             },
             {
