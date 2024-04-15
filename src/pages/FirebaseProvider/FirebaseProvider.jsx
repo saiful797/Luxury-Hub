@@ -1,9 +1,13 @@
 import { createContext, useEffect, useState } from "react";
 import PropTypes from 'prop-types';
 import auth from "../../firebase/firebase.config";
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
+import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 
 export const AuthContext = createContext(null);
+
+// Social auth provider
+const googleProvider = new GoogleAuthProvider();
+const githubProvider = new GithubAuthProvider();
 
 const FirebaseProvider = ({children}) => {
 
@@ -16,9 +20,18 @@ const FirebaseProvider = ({children}) => {
         return createUserWithEmailAndPassword(auth, email, password)
     }
 
-    // User sign in
+    // User sign in (Log in with email and password)
     const singInUser = (email, password) =>{
         return signInWithEmailAndPassword(auth, email, password)
+    }
+
+    // Google pop up log in
+    const googleLogin = () =>{
+        return signInWithPopup(auth, googleProvider);
+    }
+    // GitHub pop up login
+    const githubLogin = () =>{
+        return signInWithPopup(auth, githubProvider); 
     }
 
     // Observer
@@ -34,6 +47,8 @@ const FirebaseProvider = ({children}) => {
     const allValues = {
         createUser,
         singInUser,
+        googleLogin,
+        githubLogin,
     }
 
     return (

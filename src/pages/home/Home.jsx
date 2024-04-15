@@ -1,6 +1,6 @@
 
 import Estates from "../Estates/Estates";
-import Post from "../Posts/Posts";
+import Posts from "../Posts/Posts";
 import LuxuryLocations from "../luxuryLocations/LuxuryLocations";
 import Slider from "../slider-swiper/Slider";
 
@@ -19,8 +19,8 @@ const Home = () => {
                 <Estates></Estates>
             </div>
 
-            <div className="text-center mt-10">
-                <Post></Post>
+            <div className="text-center mt-10 bg-slate-200 p-5 rounded-2xl">
+                <Posts></Posts>
             </div>
             <div>
                 <LuxuryLocations></LuxuryLocations>
