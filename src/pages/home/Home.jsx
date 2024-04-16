@@ -22,6 +22,7 @@ const Home = () => {
             <div className="text-center mt-10 bg-slate-200 p-5 rounded-2xl">
                 <Posts></Posts>
             </div>
+
             <div>
                 <LuxuryLocations></LuxuryLocations>
             </div>
