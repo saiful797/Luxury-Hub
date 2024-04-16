@@ -1,10 +1,10 @@
 import { useContext } from "react";
 import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
 import { useForm } from "react-hook-form";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
-    const {createUser} =  useContext(AuthContext);
+    const {createUser,updateUserProfile} =  useContext(AuthContext);
 
     const {register, handleSubmit} = useForm()
 
@@ -13,16 +13,17 @@ const Register = () => {
     // const location = useLocation();
     
     const onSubmit = (data) => {
-        const {email, password} = data;
-        createUser(email, password)
-        .then((result) =>{
-            if(result.user){
+        console.log(data);
+
+        const {email, password, fullName, imageURL} = data;
+
+        createUser(email, password).then(()=>{
+            updateUserProfile(fullName, imageURL).then(() =>{
+            
                 navigate(location?.state || '/');
-            }
-            else {
-                navigate('/')
-            }
-        })
+    
+            });
+        });
     }
 
   
@@ -38,7 +39,7 @@ const Register = () => {
                             <label className="label">
                                 <span className="label-text">Name</span>
                             </label>
-                            <input type="text" placeholder="Enter your name..." name="name" className="input input-bordered"  {...register("fullName")} required />
+                            <input type="text" placeholder="Enter your name..." name="fullName" className="input input-bordered"  {...register("fullName")} required />
                         </div>
                         <div className="form-control">
                             <label className="label">
@@ -50,7 +51,7 @@ const Register = () => {
                             <label className="label">
                                 <span className="label-text">Photo URL</span>
                             </label>
-                            <input type="url" placeholder="Enter your photo url..." name="url" className="input input-bordered" {...register("url")}/>
+                            <input type="url" placeholder="Enter your photo url..." name="imageURL" className="input input-bordered" {...register("imageURL")}/>
                         </div>
                         <div className="form-control">
                             <label className="label">

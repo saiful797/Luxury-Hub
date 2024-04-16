@@ -50,7 +50,7 @@ const NavBar = () => {
                                 }
                             </div>
                             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-20 z-[1] p-2 shadow bg-base-100 rounded-box w-72 mx-auto space-y-2">
-                                <li>
+                                <li className="mx-auto">
                                     <button className="btn btn-sm btn-ghost">
                                         {
                                         user?.displayName? <h1>{user.displayName}</h1>
@@ -59,13 +59,15 @@ const NavBar = () => {
                                         }
                                     </button>
                                 </li>
-                                <li>
+                                <li className="flex justify-center items-center">
                                     {
                                         user?.email? <h1>{user.email}</h1> :''
                                     }
                                 </li>
-                                <li>
-                                    <button onClick={logout} className="btn btn-sm btn-outline btn-success">Logout</button>
+                                <li className="mx-auto">
+                                    <Link to="/">
+                                        <button  onClick={logout} className="btn btn-sm btn-outline">Logout</button>
+                                    </Link>
                                 </li>
 
                             </ul>
