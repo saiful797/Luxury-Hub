@@ -19,6 +19,7 @@ const LuxuryLocations = () => {
                         <p>SPAIN</p>
                         <p>UNITED KINGDOM</p>
                         <p>SWITZERLAND</p>
+                        <p>POLAND</p>
                     </div>
 
                     <div>
@@ -28,6 +29,7 @@ const LuxuryLocations = () => {
                         <p>MEXICO</p>
                         <p>CANADA</p>
                         <p>PANAMA</p>
+                        <p>CUBA</p>
                     </div>
                 
                     <div>
@@ -37,6 +39,7 @@ const LuxuryLocations = () => {
                         <p>CHILE</p>
                         <p>URUGUAY</p>
                         <p>PERU</p>
+                        <p>COLOMBIA</p>
                     </div>
 
                     <div>
@@ -46,6 +49,7 @@ const LuxuryLocations = () => {
                         <p>UNITED ARAB EMIRATES</p>
                         <p>TURKEY</p>
                         <p>JAPAN</p>
+                        <p>MALDIVES</p>
                     </div>
                     
                 </div>
