@@ -3,6 +3,7 @@ import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "../socialLogin/SocialLogin";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
     const {singInUser} = useContext(AuthContext);
@@ -28,6 +29,9 @@ const Login = () => {
 
     return (
         <div className="min-h-screen bg-base-200 mt-5 rounded-2xl">
+            <Helmet>
+                <title>LuxuryHub | Login Page</title>
+            </Helmet>
             <div className="hero-content flex-col">
                 <div className="text-center">
                     <h1 className="text-5xl font-bold">Login now!</h1>

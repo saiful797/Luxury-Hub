@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useLoaderData, useParams } from "react-router-dom";
 
 const ViewPropertyDetails = () => {
@@ -11,6 +12,9 @@ const ViewPropertyDetails = () => {
     return (
         
         <div className='md:flex bg-blue-950 rounded-2xl mt-5 text-white'>
+            <Helmet>
+                <title>LuxuryHub | View Property Details</title>
+            </Helmet>
             <div className='md:w-[40%]'>
                 <img className='w-full h-full rounded-2xl' src={image} alt="" />
             </div>
