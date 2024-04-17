@@ -1,3 +1,4 @@
+// Main file 
 import {Outlet} from 'react-router-dom'
 import NavBar from '../pages/Shared/NavBar/NavBar';
 import Footer from '../pages/footer/Footer';

@@ -7,7 +7,7 @@
       "price": "$8,500,000",
       "status": "SALE",
       "area": "8,000 sq ft",
-      "location": "Caribbean",
+      "location": "La Havana, Caribbean",
       "facilities": ["Infinity pool", "Private beach access", "Spa", "Entertainment areas"],
       "image": "https://i.ibb.co/JtWr77s/Beachfront-Villa.jpg"
     },
@@ -55,7 +55,7 @@
       "price": "$1,500 per night",
       "status": "RENT",
       "area": "18,000 sq ft",
-      "location": "Maldives",
+      "location": "Male, Maldives",
       "facilities": ["Private infinity pool", "Spa", "Gourmet dining", "Direct beach access"],
       "image": "https://i.ibb.co/HDphLL6/Exclusive-Resort-Retreat-muldives.jpg"
     },
@@ -79,7 +79,7 @@
       "price": "$2,000 per night",
       "status": "RENT",
       "area": "20,000 sq ft",
-      "location": "Bora Bora",
+      "location": "Bora Bora,French Polynesia",
       "facilities": ["Overwater bungalows", "Spa", "Gourmet dining", "Water sports"],
       "image": "https://i.ibb.co/K6Pcq6y/Tropical-Paradise-Retreat.jpg"
     },
@@ -91,7 +91,7 @@
       "price": "$4,500,000",
       "status": "SALE",
       "area": "3,000 sq ft",
-      "location": "Swiss Alps",
+      "location": "Swiss Alps,Switzerland",
       "facilities": ["Fireplace", "Outdoor hot tub", "Ski-in/ski-out access", "Panoramic views"],
       "image": "https://i.ibb.co/hcrCGGD/Secluded-Mountain-Chalet.jpg"
     },
