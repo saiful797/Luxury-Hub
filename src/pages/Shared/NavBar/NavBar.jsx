@@ -2,6 +2,9 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../FirebaseProvider/FirebaseProvider";
 
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 const NavBar = () => {
     const {logout, user}= useContext(AuthContext);
 
@@ -16,6 +19,24 @@ const NavBar = () => {
             </div>
          }
     </>
+
+    const handleLogoutToast = () =>{
+        toast.success(`Logout Successfully!`, {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined
+            
+        });
+    }
+
+    const myFunction = () =>{
+        handleLogoutToast(),
+        logout()
+    }
     return (
         <div className="navbar bg-blue-950 p-3 mt-3">
             <div className="navbar-start">
@@ -66,14 +87,13 @@ const NavBar = () => {
                                 </li>
                                 <li className="mx-auto">
                                     <Link to="/">
-                                        <button  onClick={logout} className="btn btn-sm btn-outline">Logout</button>
+                                        <button  onClick={myFunction} className="btn btn-sm btn-outline">Logout</button>
                                     </Link>
                                 </li>
-
                             </ul>
                         </label>
+
                     </div>
-                    
                     :
                     <div className="space-x-3 hidden md:flex">
                         <Link className="btn btn-sm btn-outline btn-accent text-base" to="/login">Login</Link>
@@ -81,6 +101,7 @@ const NavBar = () => {
                     </div>
                 }
             </div>
+            <ToastContainer />
         </div>
     );
 };

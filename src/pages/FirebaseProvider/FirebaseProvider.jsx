@@ -16,7 +16,7 @@ const FirebaseProvider = ({children}) => {
     const [loading, setLoading] = useState(true);
 
     // console.log(user);
-    
+
     //Update user profile
     const updateUserProfile = (fullName, imageURL) =>{
         return updateProfile(auth.currentUser, {
@@ -27,7 +27,7 @@ const FirebaseProvider = ({children}) => {
 
     //New User Create
     const createUser = (email, password) => {
-        // setLoading(true);
+        setLoading(true);
         return createUserWithEmailAndPassword(auth, email, password);
     }
 

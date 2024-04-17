@@ -1,11 +1,17 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+
+
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
     const {createUser,updateUserProfile} =  useContext(AuthContext);
+    const [showPassword, setShowPassword]=useState(false);
 
     const {register, handleSubmit} = useForm()
 
@@ -18,7 +24,53 @@ const Register = () => {
 
         const {email, password, fullName, imageURL} = data;
 
+        if(password.length < 6){
+            toast.error(`Password should be at least 6 characters or longer!`, {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            });
+            return;
+        }
+        else if(!/[A-Z]/.test(password)){
+            toast.error(`Your password should have at least one Uppercase character!`, {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            });
+            return;
+        }
+        else if(!/[a-z]/.test(password)){
+            toast.error(`Your password should have at least one Lowercase character!`, {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            });
+            return;
+        }
+
         createUser(email, password).then(()=>{
+            toast.success(`Account Create Successfully!`, {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined
+            });
             updateUserProfile(fullName, imageURL).then(() =>{
             
                 navigate(location?.state || '/');
@@ -57,11 +109,16 @@ const Register = () => {
                             </label>
                             <input type="url" placeholder="Enter your photo url..." name="imageURL" className="input input-bordered" {...register("imageURL")}/>
                         </div>
-                        <div className="form-control">
+                        <div className="form-control relative">
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input type="password" placeholder="Password..." name="password" className="input input-bordered" {...register("password")} required />
+                            <input type={showPassword? "text":"password"} placeholder="Password..." name="password" className="input input-bordered" {...register("password")} required />
+                            <span className="top-[54px] right-5  absolute" onClick={()=>setShowPassword(!showPassword)}>
+                                {
+                                    showPassword ? <FaEyeSlash></FaEyeSlash> : <FaEye></FaEye>
+                                }
+                            </span>
                         </div>
                         <div className="form-control mt-4">
                             <button className="btn btn-success text-white text-lg">Register</button>
@@ -72,6 +129,7 @@ const Register = () => {
                         </div>
                     </form>
                 </div>
+                <ToastContainer />
             </div>
         </div>
     );
