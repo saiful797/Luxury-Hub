@@ -25,6 +25,19 @@ const NavBar = () => {
     </>
 
     const handleLogoutToast = () =>{
+        // toast.success(`Logout Successfully!`, {
+        //     position: "top-right",
+        //     autoClose: 5000,
+        //     hideProgressBar: false,
+        //     closeOnClick: true,
+        //     pauseOnHover: true,
+        //     draggable: true,
+        //     progress: undefined
+        // });
+    }
+
+    const myFunction = () =>{
+        handleLogoutToast(),
         toast.success(`Logout Successfully!`, {
             position: "top-right",
             autoClose: 5000,
@@ -35,12 +48,9 @@ const NavBar = () => {
             progress: undefined
             
         });
-    }
-
-    const myFunction = () =>{
-        handleLogoutToast(),
         logout()
     }
+
     return (
         <div className="navbar bg-blue-950 p-3 mt-3">
             <div className="navbar-start">

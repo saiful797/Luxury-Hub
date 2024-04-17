@@ -21,18 +21,18 @@ const Login = () => {
     const onSubmit = (data) => {
         const {email, password} = data;
         singInUser(email, password).then((result) =>{
-            toast.success(`Login Successful!`, {
-                position: "top-right",
-                autoClose: 5000,
-                hideProgressBar: false,
-                closeOnClick: true,
-                pauseOnHover: true,
-                draggable: true,
-                progress: undefined
-            });
-
             if(result.user){
                 navigate(location?.state || '/');
+                toast.success("Login Successfully!", {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined
+                });
+                location.reload();
             }
         })
         .catch(error =>{
@@ -48,7 +48,7 @@ const Login = () => {
                 
             });
             return error;
-        })   
+        })  
     }
     
     return (

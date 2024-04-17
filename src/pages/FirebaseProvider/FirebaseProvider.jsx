@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import auth from "../../firebase/firebase.config";
 import { GithubAuthProvider, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { Link } from "react-router-dom";
-
 export const AuthContext = createContext(null);
 
 // Social auth provider
@@ -44,6 +43,7 @@ const FirebaseProvider = ({children}) => {
     }
     // GitHub pop up login
     const githubLogin = () =>{
+        setLoading(true);
         return signInWithPopup(auth, githubProvider); 
     }
 
@@ -80,9 +80,11 @@ const FirebaseProvider = ({children}) => {
     }
 
     return (
+        
         <AuthContext.Provider value={allValues}>
             {children}
         </AuthContext.Provider>
+        
     );
 };
 

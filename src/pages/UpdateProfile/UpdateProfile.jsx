@@ -20,14 +20,14 @@ const UpdateProfile = () => {
 
 
     updateUserProfile(fullName, imageURL).then(() => {
-        toast.success("Account Create Successfully!", {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined
+        toast.success("Profile Updated Successfully!", {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined
         });
 
         navigate(location?.state || "/");

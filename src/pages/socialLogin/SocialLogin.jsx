@@ -2,6 +2,9 @@ import { useContext } from "react";
 import { AuthContext } from "../FirebaseProvider/FirebaseProvider";
 import { useLocation, useNavigate } from "react-router-dom";
 
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 const SocialLogin = () => {
     const {googleLogin,githubLogin} = useContext(AuthContext);
 
@@ -12,6 +15,15 @@ const SocialLogin = () => {
     const handleSocialLogin =(socialProvider)=>{
         socialProvider().then((result) =>{
             if(result.user){
+                toast.success("Login Successfully!", {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined
+                });
                 navigate(location?.state || '/');
             }
         })
@@ -25,6 +37,8 @@ const SocialLogin = () => {
             <div>
                 <button className="btn btn-sm btn-outline btn-secondary w-24 " onClick={()=>handleSocialLogin (githubLogin)}>GitHub</button>
             </div>
+
+            <ToastContainer />
         </div>
     );
 };
