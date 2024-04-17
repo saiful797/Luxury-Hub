@@ -37,7 +37,7 @@ const UpdateProfile = () => {
   };
 
   return (
-    <div className="mt-10 bg-blue-100 mx-auto w-1/2 rounded-3xl">
+    <div className="mt-10 bg-blue-100 mx-auto md:w-1/2 rounded-3xl">
       <Helmet>
         <title>Update Profile</title>
       </Helmet>

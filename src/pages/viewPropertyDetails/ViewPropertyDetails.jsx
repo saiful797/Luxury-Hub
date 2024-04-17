@@ -37,7 +37,7 @@ const ViewPropertyDetails = () => {
 
                 <div className='flex gap-2'>
                     <h1 className="text-xl font-extrabold text-rose-500">Facilities: </h1>
-                    <div className="grid grid-cols-2">
+                    <div className="grid md:grid-cols-2">
                         <p className='text-teal-500 text-lg font-bold'><span className='text-[#fdbb2d]'>#</span>{facilities[0]}</p>
                         <p className='text-teal-500 text-lg font-bold ml-10'><span className='text-[#fdbb2d]'>#</span>{facilities[1]}</p>
                         <p className='text-teal-500 text-lg font-bold'><span className='text-[#fdbb2d]'>#</span>{facilities[2]}</p>
