@@ -74,6 +74,7 @@ const Register = () => {
             updateUserProfile(fullName, imageURL).then(() =>{
             
                 navigate(location?.state || '/');
+                location.reload();
     
             });
         });
@@ -83,7 +84,7 @@ const Register = () => {
     return (
         <div className="min-h-screen bg-base-200 mt-5 rounded-2xl">
             <Helmet>
-                <title>LuxuryHub | Register Page</title>
+                <title>User Register Page</title>
             </Helmet>
             <div className="hero-content flex-col">
                 <div className="text-center">

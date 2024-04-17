@@ -13,7 +13,11 @@ const NavBar = () => {
          <li><NavLink to="/about">About</NavLink></li>
          <li><NavLink to="/contact">Contact Us</NavLink></li>
          {
-            user?<p></p>: <div>
+            user?<div>
+             <li><NavLink to="/updateProfile">Update Profile</NavLink></li>
+            </div>
+            :
+            <div>
                 <li className="md:hidden"><NavLink to="/login">Login</NavLink></li>
                 <li className="md:hidden"><NavLink to="/register">Register</NavLink></li>
             </div>
@@ -41,10 +45,10 @@ const NavBar = () => {
         <div className="navbar bg-blue-950 p-3 mt-3">
             <div className="navbar-start">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-sm bg-gray-100 lg:hidden mr-2">
+                    <div  role="button" className="btn btn-sm bg-gray-100 lg:hidden mr-2">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-bold">
+                    <ul  className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-lg font-bold">
                         {navLinks}
                     </ul>
                 </div>
@@ -60,38 +64,21 @@ const NavBar = () => {
             
             <div className="navbar-end">
                 {
-                    user?<div className="dropdown dropdown-end">
+                    user?<div className="flex justify-center items-center gap-2">
 
-                        <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                            <div className="w-10 rounded-full">
-                                {
-                                    user?.photoURL? <img src={user.photoURL}/>
-                                    :
-                                    <img src="https://i.ibb.co/Jq10C13/user.png" alt="User profile..."/>
-                                }
-                            </div>
-                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-20 z-[1] p-2 shadow bg-base-100 rounded-box w-72 mx-auto space-y-2">
-                                <li className="mx-auto">
-                                    <button className="btn btn-sm btn-ghost">
-                                        {
-                                        user?.displayName? <h1>{user.displayName}</h1>
-                                        :
-                                        <h1>User</h1>
-                                        }
-                                    </button>
-                                </li>
-                                <li className="flex justify-center items-center">
-                                    {
-                                        user?.email? <h1>{user.email}</h1> :''
-                                    }
-                                </li>
-                                <li className="mx-auto">
-                                    <Link to="/">
-                                        <button  onClick={myFunction} className="btn btn-sm btn-outline">Logout</button>
-                                    </Link>
-                                </li>
-                            </ul>
-                        </label>
+                        <div className="w-10 tooltip" data-tip={user?.displayName}>
+                            {
+                                user?.photoURL? <img className="rounded-full" src={user.photoURL}/>
+                                :
+                                <img className="rounded-full" src="https://i.ibb.co/Jq10C13/user.png" alt="User profile..."/>
+                            }
+                        </div>
+
+                        <div>
+                            <Link to="/">
+                                <button  onClick={myFunction} className="btn btn-sm btn-outline btn-success">Logout</button>
+                            </Link>
+                        </div>
 
                     </div>
                     :

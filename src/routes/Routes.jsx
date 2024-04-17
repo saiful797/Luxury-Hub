@@ -8,6 +8,7 @@ import Register from "../pages/register/Register";
 import ViewPropertyDetails from "../pages/viewPropertyDetails/ViewPropertyDetails";
 import PrivateRoute from "../pages/Shared/privateRoute/PrivateRoute";
 import ContactUs from "../pages/ContactUs/ContactUs";
+import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
 
 
 const router = createBrowserRouter([
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
             {
                 path:'/contact',
                 element:<ContactUs></ContactUs>
+            },
+            {
+                path:'/updateProfile',
+                element:<UpdateProfile></UpdateProfile>
             }
         ]
 
