@@ -49,7 +49,7 @@ const Register = () => {
             return;
         }
         else if(!/[a-z]/.test(password)){
-            toast.error(`Your password should have at least one Lowercase character!`, {
+            toast.error("Your password should have at least one Lowercase character!", {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -62,7 +62,7 @@ const Register = () => {
         }
 
         createUser(email, password).then(()=>{
-            toast.success(`Account Create Successfully!`, {
+            toast.success("Account Create Successfully!", {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
