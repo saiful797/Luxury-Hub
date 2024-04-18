@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../FirebaseProvider/FirebaseProvider";
-
+import 'animate.css/animate.css';
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -25,7 +25,7 @@ const NavBar = () => {
     </>
 
     const myFunction = () =>{
-        toast.success(`Logout Successfully!`, {
+        toast.success("Logout Successfully!", {
             position: "top-right",
             autoClose: 5000,
             hideProgressBar: false,
@@ -35,21 +35,21 @@ const NavBar = () => {
             progress: undefined
             
         });
-        logout()
+        logout();
     }
 
     return (
         <div className="navbar bg-blue-950 p-3 mt-3">
             <div className="navbar-start">
                 <div className="dropdown">
-                    <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 bg-slate-50 rounded-md" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    <div tabIndex={0} role="button" className="btn btn-sm bg-slate-50 lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                         {navLinks}
                     </ul>
                 </div>
-                <div>
+                <div className="ml-3 lg:ml-0">
                     <Link to='/' className="text-2xl md:text-4xl lg:text-6xl font-bold"><span className="text-[#22c1c3]">Luxury </span> <span className="text-[#fdbb2d]">Hub</span></Link>
                 </div>
             </div>

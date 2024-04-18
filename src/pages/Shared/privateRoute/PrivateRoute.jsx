@@ -4,24 +4,21 @@ import { AuthContext } from '../../FirebaseProvider/FirebaseProvider';
 import { Navigate, useLocation } from 'react-router-dom';
 
 const PrivateRoute = ({children}) => {
-    const {user,loading} = useContext(AuthContext);
-    const location = useLocation()
+    const {user, loading} = useContext(AuthContext);
+    const location = useLocation();
 
-    if(loading && user){
-        return <span className="loading loading-spinner loading-lg text-center"></span>
-    }
-    if(!user){
-        return <Navigate to="/login" state={location?.pathname || '/'}></Navigate>
-    }
+    if(loading && user) return <div>
+        <span className="loading loading-bars loading-lg"></span>
+        <span className="loading loading-bars loading-lg"></span>
+        <span className="loading loading-bars loading-lg"></span>
+    </div>
 
-    return (
+    if(!user) return <Navigate state={location?.pathname || "/"}  to="/login"></Navigate>
 
-        <div>
-            {children}
-        </div>
-    );
+    return children; 
 };
+
 PrivateRoute.propTypes = {
-    children: PropTypes.node,
+    children: PropTypes.node
 }
 export default PrivateRoute;

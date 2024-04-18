@@ -50,22 +50,23 @@ const FirebaseProvider = ({children}) => {
     // Logout
     const logout =()=>{
         setUser(null);
-        signOut(auth);
-        setLoading(false);
+        setLoading(true);
         {
             <Link to='/'></Link>
         }
+        return signOut(auth);
     }
 
     // Observer
     useEffect(()=>{
-        onAuthStateChanged(auth, (user) => {
+       const unsubscribe = onAuthStateChanged(auth, (user) => {
             if (user) {
               setUser(user);
               setLoading(false);
             } 
         });
 
+        return () => unsubscribe();
     },[])
 
     const allValues = {

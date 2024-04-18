@@ -37,7 +37,7 @@ const Register = () => {
             return;
         }
         else if(!/[A-Z]/.test(password)){
-            toast.error(`Your password should have at least one Uppercase or Lowercase character!`, {
+            toast.error("Your password should have at least one Uppercase and Lowercase character!", {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,
@@ -49,7 +49,7 @@ const Register = () => {
             return;
         }
         else if(!/[a-z]/.test(password)){
-            toast.error("Your password should have at least one Uppercase or Lowercase character!", {
+            toast.error("Your password should have at least one Uppercase and Lowercase character!", {
                 position: "top-right",
                 autoClose: 5000,
                 hideProgressBar: false,

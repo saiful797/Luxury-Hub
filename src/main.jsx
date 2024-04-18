@@ -13,7 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <FirebaseProvider>
 
       <HelmetProvider>
-        <RouterProvider router={router}></RouterProvider>
+        <RouterProvider router={router} />
       </HelmetProvider>
       
     </FirebaseProvider>

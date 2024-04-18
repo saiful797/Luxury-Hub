@@ -2,7 +2,12 @@ i. **Code Link**: https://github.com/programming-hero-web-course-4/b9a9-real-est
 
 ii. **Live Link**: https://luxury-hub-real-estate.netlify.app/
 
-**Implemented 3 package: 1.Animate.css, 2.React Hook form, 3.Swiper slider**
+iii.**Implemented 3 package**: 
+               1.Animate.css, 
+               2.React Hook form, 
+               3.Swiper slider
+
+**#My Website Features**:
 
   1.**Property Listings**: A comprehensive data of high-end properties, with detailed descriptions, high-resolution images.
 

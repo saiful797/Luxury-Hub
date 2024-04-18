@@ -14,7 +14,7 @@ import UpdateProfile from "../pages/UpdateProfile/UpdateProfile";
 const router = createBrowserRouter([
     {
         path: '/',
-        element: <Roots></Roots>,
+        element:<Roots></Roots>,
         errorElement:<ErrorElement />,
         children:[
             {

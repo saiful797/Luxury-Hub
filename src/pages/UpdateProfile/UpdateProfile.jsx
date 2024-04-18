@@ -44,7 +44,7 @@ const UpdateProfile = () => {
         <div className="bg-base-200 p-5 rounded-2xl">
             <div className="flex-col mt-10">
                 <div className="text-center mt-10">
-                    <h1 className="text-3xl font-bold">Update Your Profile</h1>
+                    <h1 className="text-3xl font-bold">Update Your Profile Information</h1>
                 </div>
                 <div className="mx-auto mt-10 card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                     <form onSubmit={handleSubmit(onSubmit)} className="card-body">

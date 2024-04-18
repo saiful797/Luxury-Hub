@@ -15,7 +15,7 @@ const ViewPropertyDetails = () => {
         
         <div className='md:flex bg-blue-950 rounded-2xl mt-5 text-white '>
             <Helmet>
-                <title>LuxuryHub | View Property Details</title>
+                <title>Property Details</title>
             </Helmet>
             <div className='md:w-[40%] animate__animated animate__bounce animate__delay-2s'>
                 <img className='w-full h-full rounded-2xl' src={image} alt="" />

@@ -9,11 +9,11 @@ const LuxuryLocations = () => {
                     <p className="text-justify">With over 500,000 luxury properties in over 120 countries, LuxuryHub.com provides the largest selection of luxury properties. More than 50,000 real estate agencies display their finest luxury properties on the website, the largest number of high-end agents on a single website. Our goal is to provide the easiest and most efficient way to search for exceptional</p>
                     <p className="text-justify">properties around the world, relying on trusted and independent professionals in luxury real estate. LuxuryHub.com will open your eyes to the most enchanting properties in the world: luxury homes, prestigious estates, classic residences, unique castles and country homes. To rediscover that beauty is not a luxury. It is a necessity.</p>
                 </div>
-
-                <div className="flex justify-between mt-5">
+ 
+                <div className="grid grid-cols-2 space-y-5 lg:grid-cols-4 mt-5">
                     
                     <div>
-                        <h1 className="text-xl text-lime-600"><u>EUROPE</u></h1>
+                        <h1 className="text-xl text-lime-600 mt-5 lg:mt-0"><u>EUROPE</u></h1>
                         <p>FRANCE</p>
                         <p>ITALY</p>
                         <p>SPAIN</p>
