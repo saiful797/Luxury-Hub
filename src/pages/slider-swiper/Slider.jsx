@@ -49,7 +49,7 @@ const Slider = () => {
             </SwiperSlide>
             <SwiperSlide>
                 <div className='relative'>
-                    <img className='w-full h-[300px] md:h-[600px]' src="https://i.ibb.co/KD55PGn/private-islands.jpg" alt="" />
+                    <img className='w-full h-[300px] md:h-[600px]' src="https://i.ibb.co/jywjT8D/luxury-private-land.jpg" alt="" />
                     <p className='absolute top-[20%] left-1/2 -translate-x-[50%] -translate-y-[50%] text-3x md:text-4xl lg:text-6xl font-bold text-white'>Private Islands</p>
                 </div>
             </SwiperSlide>
